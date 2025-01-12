@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebProg.io"</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header
+      x-data="{navShow : false}"
+      @scroll.window="navShow = window.scrollY > 100 ? true: false"
+    >
+      <nav
+        class="header navbar navbar-expand-lg navbar-light fixed-top"
+        :class=" {' header-scrolled ' :navShow}"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#">Code.me</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >صفحه ای اصلی</a
+                >
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  محصولات
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">بخش اول</a></li>
+                  <li><a class="dropdown-item" href="#">بخش دوم</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> بخش سوم</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">درباره ما</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">تماس با ما</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Intro -->
+    <section class="intro align-items-center d-flex overflow-hidden">
+      <div class="container">
+        <div class="row align-items-center mt-5 mt-lg-0">
+          <div class="col-lg-6">
+            <h3
+              data-aos="fade-up"
+              class="fw-bold text-primary text-center text-lg-start"
+            >
+              به وبسایت من خوش آمدید
+            </h3>
+            <h5 data-aos="fade-up" data-aos-delay="400" class="text-muted mt-3">
+              در آکادمی ما، با بهترین روش‌های آموزشی و اساتید مجرب، شما
+              می‌توانید مهارت‌های زبان انگلیسی خود را بهبود بخشید. از دوره‌های
+              مبتدی تا پیشرفته، همه‌ی آنچه برای یادگیری زبان انگلیسی نیاز دارید
+              را در اینجا پیدا خواهید کرد.
+            </h5>
+            <button  data-aos="fade-up" data-aos-delay="600" class="btn btn-lg btn-primary mt-2 hover-grow">
+              بیشتر بخوانید
+            </button>
+          </div>
+          <div class="col-lg-6 mt-5 mt-lg-0 "  data-aos="zoom-out" data-aos-delay="400">
+            <img class="img-fluid" src="./images/intro/intro-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About -->
+    <section class="py-5 overflow-hidden"">
+      <div class="container">
+        <div class="row gx-0 gy-5 align-items-center">
+          <div class="col-lg-6" data-aos="fade-up" >
+            <div class="content">
+              <h3 class="text-primary">با معلمان با تجربه انگلیسی بیاموزید</h3>
+              <h2 class="fw-bold">
+                به کلاس‌های ما بپیوندید و مهارت‌های انگلیسی خود را بهبود بخشید
+              </h2>
+              <p>
+                دوره‌های ما شامل گرامر، مکالمه و انگلیسی تجاری می‌شود معلمان ما
+                دارای گواهینامه و بسیار واجد شرایط هستند. ما را در شبکه‌های
+                اجتماعی دنبال کنید تا از آخرین به‌روزرسانی‌ها مطلع شوید
+              </p>
+              <button class="btn btn-primary hover-grow">بیشتر بخوانید</button>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="400">
+            <img class="img-fluid" src="./images/about/about.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Value -->
+    <section class="py-5 overflow-hidden"">
+      <div class="container">
+        <div class="row mb-4"data-aos="fade-up" data-aos-delay="200">
+          <div class="col-12 text-center">
+            <h2 class="fw-bold text-primary">کورس ها</h2>
+            <p>دوره‌های ما شامل گرامر، مکالمه و انگلیسی تجاری می‌شود</p>
+          </div>
+        </div>
+        <div class="row g-2" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-md-6 col-lg-4">
+            <div class="card shadow">
+              <img
+                src="./images/values/1.png "
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-primary">انگلیسی</h5>
+                <p class="card-text">
+                  دوره‌های ما شامل گرامر، مکالمه و انگلیسی تجاری می‌شود
+                </p>
+                <a href="#" class="btn btn-primary">بیشتر بخوانید</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card shadow">
+              <img src="./images/values/2.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-primary">آلمانی</h5>
+                <p class="card-text">
+                  دوره‌های ما شامل گرامر، مکالمه و انگلیسی تجاری می‌شود
+                </p>
+                <a href="#" class="btn btn-primary">بیشتر بخوانید</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card shadow">
+              <img src="./images/values/3.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-primary">فرانسوی</h5>
+                <p class="card-text">
+                  دوره‌های ما شامل گرامر، مکالمه و انگلیسی تجاری می‌شود
+                </p>
+                <a href="#" class="btn btn-primary">بیشتر بخوانید</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Counts -->
+    <section class="counts py-5 overflow-hidden"">
+      <div class="container">
+        <div class="row gy-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="d-flex align-items-center justify-content-center shadow p-3"
+            >
+              <i class="bi bi-emoji-smile me-3 blue"></i>
+              <div>
+                <span
+                  class="text-primary fw-bold fs-3 purecounter"
+                  data-purecounter-start="0"
+                  data-purecounter-end="445"
+                  >0</span
+                >
+                <p>نظرات دانشجویان</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="d-flex align-items-center justify-content-center shadow p-3"
+            >
+              <i class="bi bi-journal-richtext orange me-3"></i>
+              <div>
+                <span
+                  class="text-primary fw-bold fs-3 purecounter"
+                  data-purecounter-start="0"
+                  data-purecounter-end="445"
+                  >0</span
+                >
+                <p>نظرات دانشجویان</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="d-flex align-items-center justify-content-center shadow p-3"
+            >
+              <i class="bi bi-headset green me-3"></i>
+              <div>
+                <span
+                  class="text-primary fw-bold fs-3 purecounter"
+                  data-purecounter-start="0"
+                  data-purecounter-end="445"
+                  >0</span
+                >
+                <p>نظرات دانشجویان</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="d-flex align-items-center justify-content-center shadow p-3"
+            >
+              <i class="bi bi-people red me-3 blue"></i>
+              <div>
+                <span
+                  class="text-primary fw-bold fs-3 purecounter"
+                  data-purecounter-start="0"
+                  data-purecounter-end="445"
+                  >0</span
+                >
+                <p>نظرات دانشجویان</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features -->
+    <section class="features py-5 overflow-hidden"">
+      <div class="container">
+        <div class="row" data-aos="fade-up" data-aos-delay="200">
+          <h4 class="mb-5">
+            به کلاس‌های ما بپیوندید و مهارت‌های انگلیسی خود را بهبود بخشید
+          </h4>
+        </div>
+        <div class="row" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-4 my-3">
+            <img
+              class="img-fluid"
+              src="./images/features/1.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="col-lg-8 my-5">
+            <div class="row gy-3">
+              <div class="col-md-6">
+                <div class="d-flex">
+                  <i class="bi bi-folder-fill me-3"></i>
+                  <div>
+                    <h5>دوره‌های انگلیسی</h5>
+                    <p class="text-muted">
+                      به کلاس‌های ما بپیوندید و مهارت‌های انگلیسی خود را بهبود
+                      بخشید
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex">
+                  <i class="bi bi-stack me-3"></i>
+                  <div>
+                    <h5>دوره‌های انگلیسی</h5>
+                    <p class="text-muted">
+                      به کلاس‌های ما بپیوندید و مهارت‌های انگلیسی خود را بهبود
+                      بخشید
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex">
+                  <i class="bi bi-envelope me-3"></i>
+                  <div>
+                    <h5>دوره‌های انگلیسی</h5>
+                    <p class="text-muted">
+                      به کلاس‌های ما بپیوندید و مهارت‌های انگلیسی خود را بهبود
+                      بخشید
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex">
+                  <i class="bi bi-credit-card-2-front-fill me-3"></i>
+                  <div>
+                    <h5>دوره‌های انگلیسی</h5>
+                    <p class="text-muted">
+                      به کلاس‌های ما بپیوندید و مهارت‌های انگلیسی خود را بهبود
+                      بخشید
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex">
+                  <i class="bi bi-cloud-check-fill me-3"></i>
+                  <div>
+                    <h5>دوره‌های انگلیسی</h5>
+                    <p class="text-muted">
+                      به کلاس‌های ما بپیوندید و مهارت‌های انگلیسی خود را بهبود
+                      بخشید
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex">
+                  <i class="bi bi-file-earmark-code-fill me-3"></i>
+                  <div>
+                    <h5>دوره‌های انگلیسی</h5>
+                    <p class="text-muted">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services -->
+    <section class="services py-5 overflow-hidden"">
+      <div class="container">
+        <div class="row" data-aos="fade-up" data-aos-delay="200">
+          <h2 class="fw-bold">خدمات ما</h2>
+          <p>
+            همین حالا ثبت‌نام کنید و سفر خود را به سوی تسلط بر انگلیسی آغاز کنید
+          </p>
+        </div>
+        <div class="row gy-3" data-aos="fade-up" data-aos-delay="00"> 
+          <div class="col-md-6 col-lg-4">
+            <div class="service-box blue">
+              <i class="bi bi-chat-left-text-fill icon"></i>
+              <h3 class="fw-bold mt-3">خدمات</h3>
+              <p>
+                همین حالا ثبت‌نام کنید و سفر خود را به سوی تسلط بر انگلیسی آغاز
+                کنید
+              </p>
+              <a href="#" class="read-more mt-5">
+                <span>بیشتر بخوانید</span>
+                <i class="bi bi-arrow-left"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-box orange">
+              <i class="bi bi-chat-left-text-fill icon"></i>
+              <h3 class="fw-bold mt-3">خدمات</h3>
+              <p>
+                همین حالا ثبت‌نام کنید و سفر خود را به سوی تسلط بر انگلیسی آغاز
+                کنید
+              </p>
+              <a href="#" class="read-more mt-5">
+                <span>بیشتر بخوانید</span>
+                <i class="bi bi-arrow-left"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-box green">
+              <i class="bi bi-chat-left-text-fill icon"></i>
+              <h3 class="fw-bold mt-3">خدمات</h3>
+              <p>
+                همین حالا ثبت‌نام کنید و سفر خود را به سوی تسلط بر انگلیسی آغاز
+                کنید
+              </p>
+              <a href="#" class="read-more mt-5">
+                <span>بیشتر بخوانید</span>
+                <i class="bi bi-arrow-left"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Priceing -->
+    <section class="pricing py-5 overflow-hidden"">
+      <div class="container">
+        <div class="row mb-4" data-aos="fade-up" data-aos-delay="200">
+          <h2 class="fw-bold">قیمت ها</h2>
+          <p>برای جزئیات بیشتر در مورد برنامه‌های ما با ما تماس بگیرید</p>
+        </div>
+        <div class="row text-center gy-3">
+          <div class="col-md-6 col-lg-3" data-aos="flip-right" data-aos-delay="300">
+            <div class="card shadow">
+              <div class="card-body">
+                <h4 class="fw-bold" style="color: #07d5c0">پلن های رایگان</h4>
+                <div>0 <sup>افغانی</sup> / در ماه</div>
+                <img
+                  src="./images/pricing/1.png"
+                  class="img-fluid p-4"
+                  alt=""
+                  srcset=""
+                />
+                <ul class="list-unstyled">
+                  <li class="my-2">گرامر</li>
+                  <li class="my-2">مکالمه</li>
+                  <li class="my-2">انگلیسی تجاری</li>
+                  <li class="text-decoration-line-through text-muted my-2">
+                    بازی ها
+                  </li>
+                  <li class="text-decoration-line-through text-muted my-2">
+                    بازی ها
+                  </li>
+                </ul>
+                <button class="btn btn-outline-primary mt-4">
+                  خرید پلن ها
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3"  data-aos="flip-right" data-aos-delay="400">
+            <div class="card shadow">
+              <div class="card-body">
+                <h4 class="fw-bold" style="color: #65c600">پلن اول</h4>
+                <div>23 <sup>افغانی</sup> / در ماه</div>
+                <img
+                  src="./images/pricing/2.png"
+                  class="img-fluid p-4"
+                  alt=""
+                  srcset=""
+                />
+                <ul class="list-unstyled">
+                  <li class="my-2">گرامر</li>
+                  <li class="my-2">مکالمه</li>
+                  <li class="my-2">انگلیسی تجاری</li>
+                  <li class="text-muted my-2">بازی ها</li>
+                  <li class="text-decoration-line-through text-muted my-2">
+                    بازی ها
+                  </li>
+                </ul>
+                <button class="btn btn-outline-primary mt-4">
+                  خرید پلن ها
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3"  data-aos="flip-right" data-aos-delay="500">
+            <div class="card shadow">
+              <div class="card-body">
+                <h4 class="fw-bold" style="color: #ff901c">پلن دوم</h4>
+                <div>31 <sup>افغانی</sup> / در ماه</div>
+                <img
+                  src="./images/pricing/3.png"
+                  class="img-fluid p-4"
+                  alt=""
+                  srcset=""
+                />
+                <ul class="list-unstyled">
+                  <li class="my-2">گرامر</li>
+                  <li class="my-2">مکالمه</li>
+                  <li class="my-2">انگلیسی تجاری</li>
+                  <li class="text-muted my-2">بازی ها</li>
+                  <li class="text-decoration-line-through text-muted my-2">
+                    بازی ها
+                  </li>
+                </ul>
+                <button class="btn btn-outline-primary mt-4">
+                  خرید پلن ها
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3"  data-aos="flip-right" data-aos-delay="600">
+            <div class="card shadow">
+              <div class="card-body">
+                <h4 class="fw-bold" style="color: #ff0071">پلن سوم</h4>
+                <div>66 <sup>افغانی</sup> / در ماه</div>
+                <img
+                  src="./images/pricing/4.png"
+                  class="img-fluid p-4"
+                  alt=""
+                  srcset=""
+                />
+                <ul class="list-unstyled">
+                  <li class="my-2">گرامر</li>
+                  <li class="my-2">مکالمه</li>
+                  <li class="my-2">انگلیسی تجاری</li>
+                  <li class="text-muted my-2">بازی ها</li>
+                  <li class="text-decoration-line-through text-muted my-2">
+                    بازی ها
+                  </li>
+                </ul>
+                <button class="btn btn-outline-primary mt-4">
+                  خرید پلن ها
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact me -->
+    <section class="contact py- overflow-hidden"">
+      <div class="container">
+        <div class="row mb-4 text-center">
+          <h2 class="fw-bold">ارتباط با ما</h2>
+        </div>
+        <div class="row gy-3">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-geo-alt"></i>
+                  <h5 class="fw-bold">آدرس</h5>
+                  <p>
+                    برای جزئیات بیشتر در مورد برنامه‌های ما با ما تماس بگیرید
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-telephone"></i>
+                  <h5 class="fw-bold">شماره تماس</h5>
+                  <p class="cellphone">+93 721 062 846 <br />+93 888 387 367</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-telephone"></i>
+                  <h5 class="fw-bold">تماس</h5>
+                  <p>
+                    برای جزئیات بیشتر در مورد برنامه‌های ما با ما تماس بگیرید
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-geo-alt"></i>
+                  <h5 class="fw-bold">آدرس</h5>
+                  <p>
+                    برای جزئیات بیشتر در مورد برنامه‌های ما با ما تماس بگیرید
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <form class="contact-form" action="#">
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <label for="" class="form-label">نام</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="col-md-6">
+                  <label for="" class="form-label">ایمل </label>
+                  <input type="email" class="form-control" />
+                </div>
+                <div class="col-md-12">
+                  <label for="" class="form-label">موضوع </label>
+                  <input type="email" class="form-control" />
+                </div>
+
+                <div class="col-md-12">
+                  <label for="" class="form-label">متن پیام </label>
+                  <textarea
+                    type="text"
+                    class="form-control"
+                    rows="2"
+                  ></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+                  <button class="btn btn-primary">ارسال پیام</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer overflow-hidden"">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5">
+            <h3>WebProg.io</h3>
+            <p>آکادمی یادگیری زبان انگلیسی</p>
+            <div class="social-link">
+              <a href="#"><i class="bi bi-telegram"></i></a>
+              <a href="#" class="mx-3"><i class="bi bi-github"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="mx-3"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 offset-lg-1 col-6">
+            <h5>لینک ها</h5>
+            <hr class="bg-primary" />
+            <ul class="list-unstyled footer-link">
+              <li>
+                <a href="#"><i class="bi bi-chevron-left"></i> صفحه اصلی</a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-chevron-left"></i> محصولات</a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-chevron-left"></i> خدمات</a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-chevron-left"></i>درباره </a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-chevron-left"></i>تماس با ما</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-6">
+            <h5>لینک ها</h5>
+            <hr class="bg-primary" />
+            <ul class="list-unstyled footer-link">
+              <li>
+                <a href="#"><i class="bi bi-chevron-left"></i> صفحه اصلی</a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-chevron-left"></i> محصولات</a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-chevron-left"></i> خدمات</a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-chevron-left"></i>درباره </a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-chevron-left"></i>تماس با ما</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-12 text-center text-md-start col-6">
+            <h5>خدمات</h5>
+            <hr class="bg-primary" />
+            <ul class="list-unstyled footer-link">
+              <li>
+                <a href="#"><i class="bi bi-chevron-left"></i> صفحه اصلی</a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-chevron-left"></i> محصولات</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container-fluid text-center py-4"
+        style="background-color: #f6f9ff"
+      >
+        <h5 class="fw-bold">WebProg</h5>
+        <p>
+          از دوره‌های مبتدی تا پیشرفته، همه‌ی آنچه برای یادگیری زبان انگلیسی
+          نیاز دارید را در اینجا پیدا خواهید کرد.
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      document.addEventListener("alpine.init", ()=>{
+        Alpine.data('toggleSlidebar', ()=>({
+          open:window.innerWidth <= 992 ? false:true,
+          toggle(){
+            this.open =! this.open
+          }
+
+        })),
+        Alpine.data("drapdown", ()=>({
+          open:false,
+          toggle(){
+            this.open = ! this.open
+          }
+        }))
+      })
+    </script>
+    <script>
+      AOS.init();
+    </script>
+    <script>new PureCounter()</script>
+  </body>
+</html>

@@ -1,0 +1,200 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts//Vazir.eot");
+  src: url("../fonts/Vazir.eot?#iefix") format("embaedensed"),
+    url("../fonts/Vazir.woff2") format("woff2"),
+    url("../fonts/Vazir.woff") format("woff"),
+    url("../fonts/Vazir.ttf") format("truetype");
+}
+body {
+  font-family: "vazir";
+}
+/* Header */
+.header-scrolled {
+  background-color: #fff;
+  box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);
+}
+.header {
+  transition: all 0.5s;
+  padding: 10px 0px;
+}
+@media (max-width: 992px) {
+  .header {
+    background-color: #fff;
+  }
+}
+.intro {
+  height: 100vh;
+  width: 100%;
+  background: url("../images/intro/intro-bg.png") top center no-repeat;
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 1.5 !important;
+}
+/* utilities */
+.hover-grow {
+  transition: all 0.6s;
+}
+.hover-grow:hover {
+  transform: scale(1.1);
+}
+/* About */
+.content {
+  background-color: #f6f9ff;
+  padding: 40px;
+}
+/* Counts */
+.counts i {
+  font-size: 42px;
+}
+.counts i.blue {
+  color: #4154f1;
+}
+.counts i.orange {
+  color: #ee6c20;
+}
+.counts i.green {
+  color: #15be56;
+}
+.counts i.red {
+  color: #bb0852;
+}
+/* Features */
+.features i {
+  font-size: 40px;
+  color: #4154f1;
+}
+/* Services */
+.services .service-box {
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  padding: 60px 30px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+.services .service-box .icon {
+  font-size: 30px;
+  padding: 20px;
+  line-height: 0;
+  display: inline-block;
+  border: 5px;
+}
+.services .service-box .read-more .icon {
+  font-size: 16px;
+  line-height: 0;
+  padding: 0px;
+  margin-left: 0.9rem;
+}
+.services .service-box .read-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800px;
+}
+.services .service-box.blue {
+  border-bottom: 3px solid #2db6fe;
+}
+.services .service-box .icon {
+  color: #2db6fe;
+  background-color: #dbf3fe;
+}
+.services .service-box.blue .read-more {
+  color: #2db6fe;
+}
+.services .service-box.blue:hover {
+  background-color: #2db6fe;
+  color: #fff;
+}
+.services .service-box:hover .read-more {
+  color: #fff;
+}
+.services .service-box:hover .icon {
+  background-color: #fff;
+}
+/* Services orange */
+.services .service-box.orange {
+  border-bottom: 3px solid #f68c09;
+}
+.services .service-box.orange .icon {
+  color: #f68c09;
+  background-color: #fde3c4;
+}
+.services .service-box.orange .read-more {
+  color: #f68c09;
+}
+.services .service-box.orange:hover {
+  background-color: #f68c09;
+  color: #fff;
+}
+/* Services green */
+.services .service-box.green {
+  border-bottom: 3px solid #08da4e;
+}
+.services .service-box.green .icon {
+  color: #08da4e;
+  background-color: #cffddf;
+}
+.services .service-box.green .read-more {
+  color: #08da4e;
+}
+.services .service-box.green:hover {
+  background-color: #08da4e;
+  color: #fff;
+}
+/* Pricing */
+.pricing .card {
+  transition: all 0.3s;
+}
+.pricing .card:hover {
+  transform: scale(1.1);
+}
+/* Contact */
+.contact .info-box {
+  background-color: #fafbff;
+  padding: 30px;
+}
+.contact .info-box i {
+  font-size: 30px;
+  line-height: 0;
+  color: #4154f1;
+}
+.contact .info-box .cellphone {
+  direction: ltr;
+  text-align: right;
+}
+.contact .contact-form {
+  background-color: #fafbff;
+  padding: 30px;
+  height: 100%;
+}
+/* footer */
+.footer .social-link i {
+  font-size: 20px;
+  color: rgba(1, 41, 112, 0.5);
+}
+.footer hr {
+  width: 70%;
+  height: 5px;
+}
+.footer .footer-link a {
+  color: #000;
+}
+.footer .footer-link i {
+  font-size: 13px;
+}
